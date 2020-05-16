@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.pojo.UserDao">
+
+<!--auto generated Code-->
+    <resultMap id="AllColumnMap" type="com.example.demo.pojo.User">
+        <result column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday"/>
+        <result column="created" property="created"/>
+        <result column="update" property="update"/>
+        <result column="note" property="note"/>
+    </resultMap>
+
+<!--auto generated Code-->
+    <sql id="all_column">
+        id,
+        username,
+        password,
+        name,
+        age,
+        sex,
+        birthday,
+        created,
+        update,
+        note
+    </sql>
+
+<!--auto generated Code-->
+    <insert id="insert">
+        INSERT INTO user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="pojo.id != null"> id, </if>
+            <if test="pojo.username != null"> username, </if>
+            <if test="pojo.password != null"> password, </if>
+            <if test="pojo.name != null"> name, </if>
+            <if test="pojo.age != null"> age, </if>
+            <if test="pojo.sex != null"> sex, </if>
+            <if test="pojo.birthday != null"> birthday, </if>
+            <if test="pojo.created != null"> created, </if>
+            <if test="pojo.update != null"> update, </if>
+            <if test="pojo.note != null"> note, </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="pojo.id != null"> #{pojo.id}, </if>
+            <if test="pojo.username != null"> #{pojo.username}, </if>
+            <if test="pojo.password != null"> #{pojo.password}, </if>
+            <if test="pojo.name != null"> #{pojo.name}, </if>
+            <if test="pojo.age != null"> #{pojo.age}, </if>
+            <if test="pojo.sex != null"> #{pojo.sex}, </if>
+            <if test="pojo.birthday != null"> #{pojo.birthday}, </if>
+            <if test="pojo.created != null"> #{pojo.created}, </if>
+            <if test="pojo.update != null"> #{pojo.update}, </if>
+            <if test="pojo.note != null"> #{pojo.note}, </if>
+        </trim>
+    </insert>
+
+<!--auto generated Code-->
+    <insert id="insertList">
+        INSERT INTO user(
+        <include refid="all_column"/>
+        )VALUES
+        <foreach collection="pojos" item="pojo" index="index" separator=",">
+            (
+            #{pojo.id},
+            #{pojo.username},
+            #{pojo.password},
+            #{pojo.name},
+            #{pojo.age},
+            #{pojo.sex},
+            #{pojo.birthday},
+            #{pojo.created},
+            #{pojo.update},
+            #{pojo.note}
+            )
+        </foreach>
+    </insert>
+
+<!--auto generated Code-->
+    <update id="update">
+        UPDATE user
+        <set>
+            <if test="pojo.id != null"> id = #{pojo.id}, </if>
+            <if test="pojo.username != null"> username = #{pojo.username}, </if>
+            <if test="pojo.password != null"> password = #{pojo.password}, </if>
+            <if test="pojo.name != null"> name = #{pojo.name}, </if>
+            <if test="pojo.age != null"> age = #{pojo.age}, </if>
+            <if test="pojo.sex != null"> sex = #{pojo.sex}, </if>
+            <if test="pojo.birthday != null"> birthday = #{pojo.birthday}, </if>
+            <if test="pojo.created != null"> created = #{pojo.created}, </if>
+            <if test="pojo.update != null"> update = #{pojo.update}, </if>
+            <if test="pojo.note != null"> note = #{pojo.note} </if>
+        </set>
+         WHERE id = #{pojo.id}
+    </update>
+
+<!--auto generated Code-->
+    <select id="select" resultMap="AllColumnMap">
+        SELECT <include refid="all_column"/>
+        FROM user
+        <where>
+            <if test="pojo.id != null"> AND id = #{pojo.id} </if>
+            <if test="pojo.username != null"> AND username = #{pojo.username} </if>
+            <if test="pojo.password != null"> AND password = #{pojo.password} </if>
+            <if test="pojo.name != null"> AND name = #{pojo.name} </if>
+            <if test="pojo.age != null"> AND age = #{pojo.age} </if>
+            <if test="pojo.sex != null"> AND sex = #{pojo.sex} </if>
+            <if test="pojo.birthday != null"> AND birthday = #{pojo.birthday} </if>
+            <if test="pojo.created != null"> AND created = #{pojo.created} </if>
+            <if test="pojo.update != null"> AND update = #{pojo.update} </if>
+            <if test="pojo.note != null"> AND note = #{pojo.note} </if>
+        </where>
+        LIMIT 1000 
+    </select>
+
+<!--auto generated Code-->
+    <delete id="delete">
+        DELETE FROM user where id = #{id}
+    </delete>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.pojo.User" >
+        <result column="Man" property="name" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <!--插入-->
+    <select  id="UserById"  parameterType="list"  resultMap="BaseResultMap" >
+        select * from tb_user ORDER BY created
+        <!--<where>-->
+            <!--<if test="list.size!=0">-->
+            <!--password  in-->
+            <!--<foreach collection="list" item="item" open="(" separator="," close=")">-->
+                <!--#{item}-->
+            <!--</foreach>-->
+            <!--</if>-->
+        <!--</where>-->
+
+    </select>
+    <select id="selectby" resultType="java.lang.String">
+          select username from tb_user where password =  #{pojo} and Man = #{aaa}
+    </select>
+
+    <insert id="insertuser" parameterType="com.example.demo.pojo.User">
+        insert into tb_user(username,password,usetime) values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="pojo.id != null"> #{pojo.id}, </if>
+            <if test="pojo.username != null"> #{pojo.username}, </if>
+            <if test="pojo.password != null"> #{pojo.password}, </if>
+            <if test="pojo.name != null"> #{pojo.name}, </if>
+            <if test="pojo.age != null"> #{pojo.age}, </if>
+            <if test="pojo.sex != null"> #{pojo.sex}, </if>
+            <if test="pojo.birthday != null"> #{pojo.birthday}, </if>
+            <if test="pojo.created != null"> #{pojo.created}, </if>
+            <if test="pojo.update != null"> #{pojo.update}, </if>
+            <if test="pojo.note != null"> #{pojo.note}, </if>
+        </trim>
+
+    </insert>
+</mapper>
