@@ -1,0 +1,139 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: tensquare-fls
+
+  task:
+    scheduling:
+      pool:
+        size: 10
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000s
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1ms #连接超时 毫秒
+#    jedis:
+#      pool:
+#        maxActive: 3
+#        maxIdle: 3
+#        minIdle: 1
+#        maxWait: -1s #连接池最大等行时间 -1没有限制
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  datasource:
+    druid:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://127.0.0.1:3306/eshop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+     username: root
+     password: root
+
+  session:
+    store-type:  none
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+  rabbitmq:
+    first:
+      host: 127.0.0.1
+      port: 5672
+      username: guest
+      password: guest
+    #    publisher-confirms: true
+      virtual-host: slave
+    second:
+      host: 127.0.0.1
+      port: 5672
+      username: guest
+      password: guest
+    #    publisher-confirms: true
+      virtual-host: slave2
+weixin:
+  data:
+    liang:
+      appid: wx1fedef31609ed6a5
+      secret: 12b1032f2b9389b74bd5edea4315298f
+    qiang:
+      appid: wx1d9fde8d59cd423b
+      secret: 4ff88910988daa61f2eec38361107e57
+
+#rabbitmq
+
+dynamic:
+  datasource:
+    slave1:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/eshop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: root
+    slave2:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/yun6?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: root
+    slave3:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/yun8?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: root
+
+
+#  main:
+#    allow-bean-definition-overriding: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.example.demo.entity
+  mapper-locations: mapper/*.xml
+
+
+#appID App的ID
+#appSecret
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+    registry-fetch-interval-seconds: 5
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  OkToRetryOnAllOperations: false #对所有操作请求都进行重试,默认false
+  ReadTimeout: 50000   #负载均衡超时时间，默认值5000
+  ConnectTimeout: 10000 #ribbon请求连接的超时时间，默认值2000
+  MaxAutoRetries: 0     #对当前实例的重试次数，默认0
+  MaxAutoRetriesNextServer: 1 #对切换实例的重试次数，默认1
+
+hystrix:
+  command:
+    default:  #default全局有效，service id指定应用有效
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 70000  #断路器超时时间，默认1000ms
+
+
+

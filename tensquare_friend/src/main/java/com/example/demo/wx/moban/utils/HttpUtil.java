@@ -104,6 +104,27 @@ public class HttpUtil {
 		}
 		return result;
 	}
+	public static String doGet(String url) {
+		String apiUrl = url;
+		String result = null;
+		HttpClient httpclient = new DefaultHttpClient();
+		try {
+			HttpGet httpPost = new HttpGet(apiUrl);
+			httpPost.setConfig(requestConfig);
+			System.out.println(apiUrl);
+			HttpResponse response = httpclient.execute(httpPost);
+			int statusCode = response.getStatusLine().getStatusCode();
+			System.out.println("执行状态码 : " + statusCode);
+			HttpEntity entity = response.getEntity();
+			if (entity != null) {
+				InputStream instream = entity.getContent();
+				result = IOUtils.toString(instream, "UTF-8");
+			}
+		} catch (IOException e) {
+			log.error(e.getMessage());
+		}
+		return result;
+	}
 
 	/**
 	 * 发送 POST 请求（HTTP），不带输入数据

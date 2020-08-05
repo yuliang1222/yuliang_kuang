@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pazl.authorization.mapper.CmsDetailMapper">
+  <resultMap id="BaseResultMap" type="com.pazl.authorization.entity.CmsDetail">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="cdno" jdbcType="BIGINT" property="cdno" />
+    <result column="cdname" jdbcType="VARCHAR" property="cdname" />
+    <result column="job" jdbcType="VARCHAR" property="job" />
+    <result column="mgr" jdbcType="BIGINT" property="mgr" />
+    <result column="hiredata" jdbcType="DATE" property="hiredata" />
+    <result column="sal" jdbcType="DECIMAL" property="sal" />
+    <result column="comm" jdbcType="DECIMAL" property="comm" />
+    <result column="cmsno" jdbcType="BIGINT" property="cmsno" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, cdno, cdname, job, mgr, hiredata, sal, comm, cmsno
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cmsdetail
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from cmsdetail
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.pazl.authorization.entity.CmsDetail">
+    insert into cmsdetail (id, cdno, cdname, 
+      job, mgr, hiredata, sal, 
+      comm, cmsno)
+    values (#{id,jdbcType=BIGINT}, #{cdno,jdbcType=BIGINT}, #{cdname,jdbcType=VARCHAR}, 
+      #{job,jdbcType=VARCHAR}, #{mgr,jdbcType=BIGINT}, #{hiredata,jdbcType=DATE}, #{sal,jdbcType=DECIMAL}, 
+      #{comm,jdbcType=DECIMAL}, #{cmsno,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pazl.authorization.entity.CmsDetail">
+    insert into cmsdetail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="cdno != null">
+        cdno,
+      </if>
+      <if test="cdname != null">
+        cdname,
+      </if>
+      <if test="job != null">
+        job,
+      </if>
+      <if test="mgr != null">
+        mgr,
+      </if>
+      <if test="hiredata != null">
+        hiredata,
+      </if>
+      <if test="sal != null">
+        sal,
+      </if>
+      <if test="comm != null">
+        comm,
+      </if>
+      <if test="cmsno != null">
+        cmsno,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="cdno != null">
+        #{cdno,jdbcType=BIGINT},
+      </if>
+      <if test="cdname != null">
+        #{cdname,jdbcType=VARCHAR},
+      </if>
+      <if test="job != null">
+        #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="mgr != null">
+        #{mgr,jdbcType=BIGINT},
+      </if>
+      <if test="hiredata != null">
+        #{hiredata,jdbcType=DATE},
+      </if>
+      <if test="sal != null">
+        #{sal,jdbcType=DECIMAL},
+      </if>
+      <if test="comm != null">
+        #{comm,jdbcType=DECIMAL},
+      </if>
+      <if test="cmsno != null">
+        #{cmsno,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pazl.authorization.entity.CmsDetail">
+    update cmsdetail
+    <set>
+      <if test="cdno != null">
+        cdno = #{cdno,jdbcType=BIGINT},
+      </if>
+      <if test="cdname != null">
+        cdname = #{cdname,jdbcType=VARCHAR},
+      </if>
+      <if test="job != null">
+        job = #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="mgr != null">
+        mgr = #{mgr,jdbcType=BIGINT},
+      </if>
+      <if test="hiredata != null">
+        hiredata = #{hiredata,jdbcType=DATE},
+      </if>
+      <if test="sal != null">
+        sal = #{sal,jdbcType=DECIMAL},
+      </if>
+      <if test="comm != null">
+        comm = #{comm,jdbcType=DECIMAL},
+      </if>
+      <if test="cmsno != null">
+        cmsno = #{cmsno,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pazl.authorization.entity.CmsDetail">
+    update cmsdetail
+    set cdno = #{cdno,jdbcType=BIGINT},
+      cdname = #{cdname,jdbcType=VARCHAR},
+      job = #{job,jdbcType=VARCHAR},
+      mgr = #{mgr,jdbcType=BIGINT},
+      hiredata = #{hiredata,jdbcType=DATE},
+      sal = #{sal,jdbcType=DECIMAL},
+      comm = #{comm,jdbcType=DECIMAL},
+      cmsno = #{cmsno,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

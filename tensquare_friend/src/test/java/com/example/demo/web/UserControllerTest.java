@@ -1,19 +1,23 @@
 package com.example.demo.web;
 
 
-import com.example.demo.DemoApplication;
+import com.alibaba.fastjson.JSON;
+import com.example.demo.FriendApplication;
 import com.example.demo.web.hashmap.MenuDO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.redisson.api.RMapCache;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: yuliang
@@ -21,12 +25,13 @@ import java.util.List;
  */
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DemoApplication.class)
+@SpringBootTest(classes = FriendApplication.class)
 public class UserControllerTest {
 
 	@Autowired
 	private RedissonClient redissonClient;
-
+	@Autowired
+	private StringRedisTemplate stringRedisTemplate;
 	@Test
 	public void lock() throws InvocationTargetException, IllegalAccessException {
 
@@ -42,15 +47,22 @@ public class UserControllerTest {
 		};
 //		dewightorintersectionList( menuList, "tts","parentId");
 
-//		RMapCache<String, String> cmsmap = redissonClient.getMapCache("cms");
-//		cmsmap.fastPut("cms1", JSONObject.toJSONString(menuList));
-//		String cms2 = cmsmap.remove("cms");
-//		cmsmap.fastRemove();
+		RMapCache<String, String> cmsmap = redissonClient.getMapCache("cms");
+    	 cmsmap.put("cms3",  JSON.toJSONString(menuList),25L,TimeUnit.SECONDS);
+    	 cmsmap.put("cms4",  JSON.toJSONString(menuList));
+		String cms2 = cmsmap.remove("cms4");
+		System.out.println(cms2);
+		 stringRedisTemplate.opsForValue().set("{dsfdsf}","aaa",30L,TimeUnit.SECONDS);//		cmsmap.expire(50L, TimeUnit.SECONDS );
+		String token = stringRedisTemplate.opsForValue().get("aaaa");//		cmsmap.expire(50L, TimeUnit.SECONDS );
+//		stringRedisTemplate.delete("aaaa");
 
-//		boolean cms = cmsmap.fastPut("cms1",  JSON.toJSONString(menuList),1L,TimeUnit.DAYS);
+
+//		String cms2 = cmsmap.remove("cms1");
+//		cmsmap.fastRemove();
 //
-//		String cms1 = cmsmap.get("cms1");
-//		List<MenuDO> menuVOSlist = JSON.parseArray(cms1, MenuDO.class);
+//		boolean cms = cmsmap.fastPut("cms2",  JSON.toJSONString(menuList),1L,TimeUnit.DAYS);
+
+
 
 //		List<MenuVO> menuVOS = hashmaptest.buildMenuTree(menuVOSlist);
 //		log.info("menuVOS={}", JsonUtils.toString(menuVOS));
@@ -61,13 +73,19 @@ public class UserControllerTest {
 //		RSetCache<Object> cmsmapresultset = redissonClient.getSetCache("cms");
 //		boolean add = cmsmapresultset.add(menuList, 1, TimeUnit.DAYS);
 //		RSetCache<String> setcms = redissonClient.getSetCache("setcms");
-//		setcms.add("180126447896", 15, TimeUnit.MILLISECONDS);
-//		setcms.add("180126447826", 15, TimeUnit.MILLISECONDS);
-//		setcms.add("180126447896", 15, TimeUnit.MILLISECONDS);
+//		setcms.add("180126447896", 15, TimeUnit.MINUTES);
+//		setcms.add("180126447826", 15, TimeUnit.MINUTES);
+//		setcms.add("180126447896", 15, TimeUnit.MINUTES);
 //		setcms.remove("180126447826");
 
 	}
 
+	@Test
+	public void lock1() throws InvocationTargetException, IllegalAccessException {
+		String aa = "dlksf{aaa";
+		String[] split = aa.split(":");
+		System.out.println(split);
 
+	}
 
 }

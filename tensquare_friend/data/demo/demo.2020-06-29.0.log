@@ -1,0 +1,626 @@
+2020-06-29 10:40:38 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.annotation.AnnotationConfigApplicationContext[0;39m | Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7997b197: startup date [Mon Jun 29 10:40:38 CST 2020]; root of context hierarchy
+2020-06-29 10:40:39 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor[0;39m | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-29 10:40:39 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c57f055] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:40:39 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.example.demo.web.HelloControllerTest[0;39m | No active profile set, falling back to default profiles: default
+2020-06-29 10:40:39 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.context.support.GenericWebApplicationContext[0;39m | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2aeefcc: startup date [Mon Jun 29 10:40:39 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7997b197
+2020-06-29 10:40:42 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'bookMapper' and 'com.example.demo.mapper.BookMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:40:42 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'brokerMessageLogMapper' and 'com.example.demo.mapper.BrokerMessageLogMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:40:42 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'orderMapper' and 'com.example.demo.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:40:42 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:40:42 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-06-29 10:40:42 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m | Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-29 10:40:43 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.cloud.context.scope.GenericScope[0;39m | BeanFactory id=18f017b0-2ea9-38f1-9c3c-bb42618f86d1
+2020-06-29 10:40:43 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor[0;39m | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-29 10:40:43 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'asyncConfig' of type [com.example.demo.web.AsyncConfig$$EnhancerBySpringCGLIB$$72808a67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:40:43 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m | Initializing ExecutorService 
+2020-06-29 10:40:43 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c6a9ab86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:40:44 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ded58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:40:44 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c57f055] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:40:45 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-1} inited
+2020-06-29 10:40:45 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-2} inited
+2020-06-29 10:40:45 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-3} inited
+2020-06-29 10:40:45 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-4} inited
+2020-06-29 10:40:46 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.redisson.Version[0;39m | Redisson 3.5.7
+2020-06-29 10:40:47 | [1;31mERROR[0;39m | [1;33mredisson-netty-1-20[0;39m | [1;32morg.redisson.connection.pool.MasterConnectionPool[0;39m | host /127.0.0.1:6379 disconnected due to failedAttempts=3 limit reached
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:634)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 11 common frames omitted
+2020-06-29 10:40:49 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.context.support.GenericWebApplicationContext[0;39m | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fangshaInterceptor': Unsatisfied dependency expressed through field 'redissonClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getRedisson' defined in class path resource [com/example/demo/redissonConfig/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+2020-06-29 10:40:49 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-29 10:40:49 | [1;31mERROR[0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.SpringApplication[0;39m | Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fangshaInterceptor': Unsatisfied dependency expressed through field 'redissonClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getRedisson' defined in class path resource [com/example/demo/redissonConfig/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getRedisson' defined in class path resource [com/example/demo/redissonConfig/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	... 54 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool$2$1.operationComplete(ConnectionPool.java:137)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:485)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:121)
+	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:108)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:306)
+	at org.redisson.connection.pool.ConnectionPool.access$400(ConnectionPool.java:53)
+	at org.redisson.connection.pool.ConnectionPool$4.operationComplete(ConnectionPool.java:276)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:504)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:483)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:121)
+	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:108)
+	at org.redisson.client.RedisClient$3$1$2.run(RedisClient.java:284)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:464)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:634)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 11 common frames omitted
+2020-06-29 10:40:49 | [1;31mERROR[0;39m | [1;33mmain[0;39m | [1;32morg.springframework.test.context.TestContextManager[0;39m | Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@59e32960] to prepare test instance [com.example.demo.web.HelloControllerTest@acd115d]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fangshaInterceptor': Unsatisfied dependency expressed through field 'redissonClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getRedisson' defined in class path resource [com/example/demo/redissonConfig/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getRedisson' defined in class path resource [com/example/demo/redissonConfig/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'getRedisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	... 54 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: /127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool$2$1.operationComplete(ConnectionPool.java:137)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:485)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:121)
+	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:108)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:306)
+	at org.redisson.connection.pool.ConnectionPool.access$400(ConnectionPool.java:53)
+	at org.redisson.connection.pool.ConnectionPool$4.operationComplete(ConnectionPool.java:276)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:504)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:483)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:121)
+	at org.redisson.misc.RedissonPromise.tryFailure(RedissonPromise.java:108)
+	at org.redisson.client.RedisClient$3$1$2.run(RedisClient.java:284)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:464)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:634)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 11 common frames omitted
+2020-06-29 10:41:00 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.annotation.AnnotationConfigApplicationContext[0;39m | Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@436c81a3: startup date [Mon Jun 29 10:41:00 CST 2020]; root of context hierarchy
+2020-06-29 10:41:00 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor[0;39m | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-29 10:41:00 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e993e33c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:41:01 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.example.demo.web.HelloControllerTest[0;39m | No active profile set, falling back to default profiles: default
+2020-06-29 10:41:01 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.context.support.GenericWebApplicationContext[0;39m | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@44a2b17b: startup date [Mon Jun 29 10:41:01 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@436c81a3
+2020-06-29 10:41:02 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'bookMapper' and 'com.example.demo.mapper.BookMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:41:02 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'brokerMessageLogMapper' and 'com.example.demo.mapper.BrokerMessageLogMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:41:02 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'orderMapper' and 'com.example.demo.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:41:02 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-06-29 10:41:02 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32morg.mybatis.spring.mapper.ClassPathMapperScanner[0;39m | No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-06-29 10:41:02 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m | Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-29 10:41:02 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.cloud.context.scope.GenericScope[0;39m | BeanFactory id=18f017b0-2ea9-38f1-9c3c-bb42618f86d1
+2020-06-29 10:41:03 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor[0;39m | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-29 10:41:03 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'asyncConfig' of type [com.example.demo.web.AsyncConfig$$EnhancerBySpringCGLIB$$3fbc7d4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:41:03 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m | Initializing ExecutorService 
+2020-06-29 10:41:03 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$93e59e6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:41:03 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd79e03f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:41:03 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e993e33c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-1} inited
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-2} inited
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-3} inited
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.alibaba.druid.pool.DruidDataSource[0;39m | {dataSource-4} inited
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.redisson.Version[0;39m | Redisson 3.5.7
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mredisson-netty-1-20[0;39m | [1;32morg.redisson.connection.pool.MasterConnectionPool[0;39m | 10 connections initialized for /127.0.0.1:6379
+2020-06-29 10:41:04 | [34mINFO [0;39m | [1;33mredisson-netty-1-14[0;39m | [1;32morg.redisson.connection.pool.MasterPubSubConnectionPool[0;39m | 1 connections initialized for /127.0.0.1:6379
+2020-06-29 10:41:05 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.annotation.AnnotationConfigApplicationContext[0;39m | Refreshing FeignContext-tensquare-base: startup date [Mon Jun 29 10:41:05 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@44a2b17b
+2020-06-29 10:41:05 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor[0;39m | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-29 10:41:06 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32mcom.netflix.config.sources.URLConfigurationSource[0;39m | No URLs will be polled as dynamic configuration sources.
+2020-06-29 10:41:06 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.netflix.config.sources.URLConfigurationSource[0;39m | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-29 10:41:06 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.netflix.config.DynamicPropertyFactory[0;39m | DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@57bac3f0
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/poi],methods=[GET]}" onto public void com.example.demo.web.HelloController.test(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.example.demo.web.HelloController.test()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/calculatePrice],methods=[GET]}" onto public java.math.BigDecimal com.example.demo.web.HelloController.calculatePrice(java.lang.String)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/search],methods=[GET]}" onto public java.util.List<com.example.demo.pojo.User> com.example.demo.web.HelloController.hello()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/searchM3],methods=[GET]}" onto public com.example.demo.utils.Result com.example.demo.web.HelloController.hello2()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/fangqq],methods=[GET]}" onto public java.lang.String com.example.demo.web.HelloController.fangqq(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/searchM],methods=[GET]}" onto public com.example.demo.utils.Result<java.util.List<com.example.demo.pojo.User>> com.example.demo.web.HelloController.hello1()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/fang],methods=[POST]}" onto public java.lang.String com.example.demo.web.HelloController.fang(javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/insertuser],methods=[POST]}" onto public com.example.demo.utils.Result com.example.demo.web.HelloController.insertuser(com.example.demo.web.RequestData)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/select/book],methods=[POST]}" onto public com.example.demo.entity.Book com.example.demo.web.statusMoveController.StatusMoveController.selectbook()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/select/book1],methods=[POST]}" onto public com.example.demo.entity.Book com.example.demo.web.statusMoveController.StatusMoveController.selectbook1() throws java.lang.reflect.InvocationTargetException,java.lang.IllegalAccessException
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/user/lock],methods=[GET]}" onto public com.example.demo.utils.Result com.example.demo.web.UserController.lock() throws java.lang.reflect.InvocationTargetException,java.lang.IllegalAccessException
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/user/isunLock],methods=[GET]}" onto public com.example.demo.utils.Result com.example.demo.web.UserController.isunLock(java.lang.Integer)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/user/unLock],methods=[GET]}" onto public com.example.demo.utils.Result com.example.demo.web.UserController.unLock(java.lang.Integer)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/wxmb/sendmsg],methods=[POST]}" onto public void com.example.demo.wx.moban.controller.WxMobanController.sendMsg(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-29 10:41:07 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[0;39m | Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-29 10:41:09 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[0;39m | Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-29 10:41:09 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping[0;39m | Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-06-29 10:41:09 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping[0;39m | Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-06-29 10:41:09 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping[0;39m | Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-29 10:41:09 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mspringfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping[0;39m | Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-29 10:41:10 | [31mWARN [0;39m | [1;33mmain[0;39m | [1;32mcom.netflix.config.sources.URLConfigurationSource[0;39m | No URLs will be polled as dynamic configuration sources.
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.netflix.config.sources.URLConfigurationSource[0;39m | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.handler.SimpleUrlHandlerMapping[0;39m | Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[0;39m | Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@44a2b17b: startup date [Mon Jun 29 10:41:01 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@436c81a3
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.handler.BeanNameUrlHandlerMapping[0;39m | Mapped URL path [/status] onto handler '/status'
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.handler.SimpleUrlHandlerMapping[0;39m | Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.handler.SimpleUrlHandlerMapping[0;39m | Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[0;39m | Detected @ExceptionHandler methods in globalExceptionHandler
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mtk.mybatis.mapper.autoconfigure.MapperCacheDisabler[0;39m | Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mtk.mybatis.mapper.autoconfigure.MapperCacheDisabler[0;39m | Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mtk.mybatis.mapper.autoconfigure.MapperCacheDisabler[0;39m | Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-06-29 10:41:10 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mtk.mybatis.mapper.autoconfigure.MapperCacheDisabler[0;39m | Clear EntityHelper entityTableMap cache.
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.DefaultLifecycleProcessor[0;39m | Starting beans in phase 0
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32morg.springframework.context.support.DefaultLifecycleProcessor[0;39m | Starting beans in phase 2147483647
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mspringfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper[0;39m | Context refreshed
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mspringfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper[0;39m | Found 1 custom documentation plugin(s)
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mspringfox.documentation.spring.web.scanners.ApiListingReferenceScanner[0;39m | Scanning for api listing references
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mspringfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator[0;39m | Generating unique operation named: testUsingGET_1
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mspringfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator[0;39m | Generating unique operation named: handleUsingGET_1
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mwxSimpleMessageListenerContainer-1[0;39m | [1;32morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m | Attempting to connect to: 127.0.0.1:5672
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mwxSimpleMessageListenerContainer-1[0;39m | [1;32morg.springframework.amqp.rabbit.connection.CachingConnectionFactory[0;39m | Created new connection: firstConnectionFactory#614d7fbf:0/SimpleConnection@197d91a0 [delegate=amqp://guest@127.0.0.1:5672/slave, localPort= 62976]
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mmain[0;39m | [1;32mcom.example.demo.web.HelloControllerTest[0;39m | Started HelloControllerTest in 12.9 seconds (JVM running for 14.003)
+2020-06-29 10:41:12 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.web.context.support.GenericWebApplicationContext[0;39m | Closing org.springframework.web.context.support.GenericWebApplicationContext@44a2b17b: startup date [Mon Jun 29 10:41:01 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@436c81a3
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.cloud.netflix.eureka.InstanceInfoFactory[0;39m | Setting initial instance status as: STARTING
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[0;39m | Unregistering application tensquare-friend with eureka with status DOWN
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.context.support.DefaultLifecycleProcessor[0;39m | Stopping beans in phase 2147483647
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m | Waiting for workers to finish.
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m | Successfully waited for workers to finish.
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m | Waiting for workers to finish.
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m | Successfully waited for workers to finish.
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.context.support.DefaultLifecycleProcessor[0;39m | Stopping beans in phase 0
+2020-06-29 10:41:13 | [31mWARN [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.beans.factory.support.DisposableBeanAdapter[0;39m | Destroy method 'close' on bean with name 'jCacheCacheManager' threw an exception: java.lang.NullPointerException
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m | Shutdown ignored - container is not active already
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[0;39m | Shutdown ignored - container is not active already
+2020-06-29 10:41:13 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Initializing Eureka in region us-east-1
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.provider.DiscoveryJerseyProvider[0;39m | Using JSON encoding codec LegacyJacksonJson
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.provider.DiscoveryJerseyProvider[0;39m | Using JSON decoding codec LegacyJacksonJson
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.provider.DiscoveryJerseyProvider[0;39m | Using XML encoding codec XStreamXml
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.provider.DiscoveryJerseyProvider[0;39m | Using XML decoding codec XStreamXml
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[0;39m | Resolving eureka endpoints via configuration
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Disable delta property : false
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Single vip registry refresh property : null
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Force full registry fetch : false
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Application is null : false
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Registered Applications size is zero : true
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Application version is -1: true
+2020-06-29 10:41:14 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Getting all instance registry info from the eureka server
+2020-06-29 10:41:16 | [1;31mERROR[0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m | Request execution error
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1051)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:965)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:414)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:269)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:63)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:269)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$f0fcdc5b.CGLIB$eurekaClient$1(<generated>)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$f0fcdc5b$$FastClassBySpringCGLIB$$8d30ad15.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$f0fcdc5b.eurekaClient(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:353)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:350)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:193)
+	at com.sun.proxy.$Proxy178.shutdown(Unknown Source)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.close(EurekaRegistration.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 65 common frames omitted
+2020-06-29 10:41:16 | [31mWARN [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m | Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-06-29 10:41:16 | [1;31mERROR[0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | DiscoveryClient_TENSQUARE-FRIEND/WIN-RMNCVCE7I3E:tensquare-friend:-1 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1051)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:965)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:414)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:269)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:63)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:269)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$f0fcdc5b.CGLIB$eurekaClient$1(<generated>)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$f0fcdc5b$$FastClassBySpringCGLIB$$8d30ad15.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$f0fcdc5b.eurekaClient(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:353)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:350)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:193)
+	at com.sun.proxy.$Proxy178.shutdown(Unknown Source)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.close(EurekaRegistration.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-06-29 10:41:16 | [31mWARN [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Using default backup registry implementation which does not do anything.
+2020-06-29 10:41:16 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Starting heartbeat executor: renew interval is: 5
+2020-06-29 10:41:16 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.InstanceInfoReplicator[0;39m | InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-29 10:41:16 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Discovery Client initialized at timestamp 1593398476175 with initial instances count: 0
+2020-06-29 10:41:16 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Shutting down DiscoveryClient ...
+2020-06-29 10:41:19 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Unregistering ...
+2020-06-29 10:41:20 | [1;31mERROR[0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m | Request execution error
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:223)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:494)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy178.shutdown(Unknown Source)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.close(EurekaRegistration.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 46 common frames omitted
+2020-06-29 10:41:20 | [31mWARN [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m | Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-06-29 10:41:20 | [1;31mERROR[0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | DiscoveryClient_TENSQUARE-FRIEND/WIN-RMNCVCE7I3E:tensquare-friend:-1 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:223)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:494)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy178.shutdown(Unknown Source)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.close(EurekaRegistration.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-06-29 10:41:20 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32mcom.netflix.discovery.DiscoveryClient[0;39m | Completed shut down of DiscoveryClient
+2020-06-29 10:41:20 | [34mINFO [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.context.annotation.AnnotationConfigApplicationContext[0;39m | Closing FeignContext-tensquare-base: startup date [Mon Jun 29 10:41:05 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@44a2b17b
+2020-06-29 10:41:20 | [31mWARN [0;39m | [1;33mThread-8[0;39m | [1;32morg.springframework.context.annotation.AnnotationConfigApplicationContext[0;39m | Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)

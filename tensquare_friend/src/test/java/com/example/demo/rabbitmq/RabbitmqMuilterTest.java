@@ -6,7 +6,7 @@
  */
 package com.example.demo.rabbitmq;
 
-import com.example.demo.DemoApplication;
+import com.example.demo.FriendApplication;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @Date: 2020/4/13 0013 17:25
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DemoApplication.class)
+@SpringBootTest(classes = FriendApplication.class)
 public class RabbitmqMuilterTest {
 
 }

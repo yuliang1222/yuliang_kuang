@@ -19,6 +19,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author: yuliang
  * @Date: 2020/3/30 0030 18:05
@@ -110,23 +113,44 @@ public class RabbitmqConfigure {
 
 	@Autowired
 	private WxReciver wxReciver;
-
+	@Autowired
+	private WxReciver1 wxReciver1;
 	@Bean("topicExchange")
-	public Exchange directExchange() {
+	public FanoutExchange directExchange() {
 //		return ExchangeBuilder.directExchange("wx_temp_msg_exchange").durable(true).build();
-		return ExchangeBuilder.topicExchange("wx_temp_msg_exchange").durable(true).build();
+//		return ExchangeBuilder.topicExchange("wx_temp_msg_exchange").durable(true).build();
+		return new FanoutExchange("wx_temp_msg_exchange");
 	}
 
 	@Bean
 	public Queue wxtempmsgQueue() {
-		return new Queue("wx_temp_msg_queue",true);
+		return new Queue("wx_temp_msg_queue",true,false,false);
 	}
-
 	@Bean
-	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") Exchange exchange) {
-		return BindingBuilder.bind(queue).to(exchange).with("wx_temp_msg_key.#").noargs();
+	public Queue wxtempmsgQueue1() {
+		return new Queue("wx_temp_msg_queue1",true,false,false);
 	}
-
+//	@Bean
+//	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") Exchange exchange) {
+//		return BindingBuilder.bind(queue).to(exchange).with("wx_temp_msg_key.#").noargs();
+//	}
+	@Bean
+	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") FanoutExchange exchange) {
+		return BindingBuilder.bind(queue).to(exchange);
+	}
+	@Bean
+	public Binding wxtempmsgbinding1(@Qualifier("wxtempmsgQueue1") Queue queue, @Qualifier("topicExchange") FanoutExchange exchange) {
+		return BindingBuilder.bind(queue).to(exchange);
+	}
+	//配置死信队列wx_temp_msg_queue
+	@Bean
+	public Queue deadLetterQueue() {
+		Map<String, Object> args = new HashMap<>();
+		args.put("x-message-ttl", 10000);
+		args.put("x-dead-letter-exchange", "wx_temp_msg_exchange");
+		args.put("x-dead-letter-routing-key", "wx_temp_msg_key.#");
+		return new Queue("deadLetterQueue", true, false, false, args);
+	}
 
 	@Bean
 	public  SimpleMessageListenerContainer wxSimpleMessageListenerContainer(@Qualifier("wxtempmsgQueue") Queue queue,@Qualifier("firstConnectionFactory") CachingConnectionFactory firstConnectionFactory) {
@@ -135,12 +159,18 @@ public class RabbitmqConfigure {
 		container.setMessageListener(wxReciver);
 		return container;
 	}
-
+	@Bean
+	public  SimpleMessageListenerContainer wxSimpleMessageListenerContainer2(@Qualifier("wxtempmsgQueue1") Queue queue,@Qualifier("firstConnectionFactory") CachingConnectionFactory firstConnectionFactory) {
+		SimpleMessageListenerContainer container = getContainer(firstConnectionFactory);
+		container.setQueues(queue);
+		container.setMessageListener(wxReciver1);
+		return container;
+	}
 	public SimpleMessageListenerContainer getContainer(@Qualifier("firstConnectionFactory") CachingConnectionFactory firstConnectionFactory) {
 		SimpleMessageListenerContainer container = new SimpleMessageListenerContainer(firstConnectionFactory);
 		container.setConcurrentConsumers(5);
 		container.setMaxConcurrentConsumers(10);
-		container.setPrefetchCount(2);
+		container.setPrefetchCount(0);
 		container.setAcknowledgeMode(AcknowledgeMode.MANUAL);
 		return container;
 	}

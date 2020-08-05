@@ -8,7 +8,6 @@ package com.example.demo.wx.moban.factory;
 
 import com.example.demo.wx.moban.config.WxAppPropert;
 import com.example.demo.wx.moban.config.WxAppProperties;
-import com.example.demo.wx.moban.utils.HttpUtil;
 import com.example.demo.wx.moban.utils.wxTokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -34,6 +33,7 @@ public class WxTokenFactory {
 		String redisKey = wxAccounts + "_wx_access_token";
 //		String token = stringRedisTemplate.opsForValue().get(redisKey);
 		String token = stringRedisTemplate.opsForValue().get(redisKey);
+
 
 		if (null == token) {
 			WxAppPropert wxAppPropert = this.wxAppProperties.getData().get(wxAccounts);

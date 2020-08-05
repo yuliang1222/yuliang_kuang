@@ -2,10 +2,9 @@ package com.example.demo.itheima.strategy1;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.demo.DemoApplication;
+import com.example.demo.FriendApplication;
 import com.example.demo.datasource.properties.DynamicDataSourceProperties;
 import com.example.demo.wx.moban.config.WxAppProperties;
-
 import com.example.demo.wx.moban.factory.wxtemplate.WxtemplateFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,7 +34,7 @@ import static java.util.regex.Pattern.compile;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DemoApplication.class)
+@SpringBootTest(classes = FriendApplication.class)
 //@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @EnableConfigurationProperties(WxAppProperties.class)
 public class WorkPunishTest {

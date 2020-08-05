@@ -15,7 +15,7 @@
         <!-- 数据库的相关配置 -->
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://localhost:3306/eshop"
+                connectionURL="jdbc:mysql://localhost:3306/guns"
                 userId="root"
                 password="root"/>
 
@@ -47,7 +47,7 @@
 
         <!-- 相关表的配置 -->
 
-        <table schema="general" tableName="article" domainObjectName="article"
+        <table schema="general" tableName="test_table" domainObjectName="TestTable"
 
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
 

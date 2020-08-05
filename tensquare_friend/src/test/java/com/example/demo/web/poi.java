@@ -6,7 +6,7 @@
  */
 package com.example.demo.web;
 
-import com.example.demo.DemoApplication;
+import com.example.demo.FriendApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,7 +23,7 @@ import java.util.List;
  * @Date: 2019/12/4 0004 10:24
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DemoApplication.class)
+@SpringBootTest(classes = FriendApplication.class)
 public class poi {
 
 	@Test

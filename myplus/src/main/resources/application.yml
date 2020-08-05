@@ -1,0 +1,11 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: myplus
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/eshop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: root
+

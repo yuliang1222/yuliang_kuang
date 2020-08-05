@@ -112,7 +112,7 @@ public class CollectDemo {
 				new Student("小李", 6, Gender.MALE, Grade.ONE),
 				new Student("小马", 14, Gender.FEMALE, Grade.FOUR),
 				new Student("小刘", 13, Gender.MALE, Grade.FOUR));
-
+		students.toArray(new String[0]);
 		// 得到所有学生的年龄列表
 		// s -> s.getAge() --> Student::getAge , 不会多生成一个类似 lambda$0这样的函数
 		Set<Integer> ages = students.stream().map(Student::getAge)

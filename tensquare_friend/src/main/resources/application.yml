@@ -1,5 +1,5 @@
 server:
-  port: 9010
+  port: 9013
 spring:
   application:
     name: tensquare-friend
@@ -31,7 +31,7 @@ spring:
     druid:
       password: root
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/yun6
+      url: jdbc:mysql://127.0.0.1:3306/eshop
       username: root
 
   session:
@@ -72,7 +72,7 @@ dynamic:
   datasource:
     slave1:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/yun7?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      url: jdbc:mysql://127.0.0.1:3306/eshop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
       username: root
       password: root
     slave2:
@@ -94,7 +94,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  type-aliases-package: com.example.demo.pojo
+  type-aliases-package: com.example.demo.entity
   mapper-locations: mapper/*.xml
 
 

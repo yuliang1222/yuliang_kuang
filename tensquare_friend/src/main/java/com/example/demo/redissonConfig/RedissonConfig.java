@@ -33,6 +33,8 @@ public class RedissonConfig {
 	@Value("${spring.redis.port}")
 	private int port;
 
+
+
 //	@Value("${spring.redis.password}")
 //	private String password;
 
@@ -41,7 +43,7 @@ public class RedissonConfig {
 
 		Config config = new Config();
 //		config.useSingleServer().setAddress("redis://" + host + ":" + port).setPassword(password);
-		config.useSingleServer().setAddress("redis://" + host + ":" + port);
+		config.useSingleServer().setAddress("redis://" + host + ":" + port).setKeepAlive(true).setPingConnectionInterval(2000).setPingTimeout(10000);
 		//添加主从配置
 //        config.useMasterSlaveServers().setMasterAddress("").setPassword("").addSlaveAddress(new String[]{"",""});
 
