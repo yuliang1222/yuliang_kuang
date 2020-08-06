@@ -13,7 +13,6 @@
         <module>tensquare_eureka</module>
         <module>tensquare_friend</module>
         <module>tensquare_fls</module>
-        <module>myplus</module>
     </modules>
     <packaging>pom</packaging>
 
