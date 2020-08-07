@@ -130,14 +130,14 @@ public class RabbitmqConfigure {
 	public Queue wxtempmsgQueue1() {
 		return new Queue("wx_temp_msg_queue1",true,false,false);
 	}
-//	@Bean
-//	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") Exchange exchange) {
-//		return BindingBuilder.bind(queue).to(exchange).with("wx_temp_msg_key.#").noargs();
-//	}
 	@Bean
-	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") FanoutExchange exchange) {
-		return BindingBuilder.bind(queue).to(exchange);
+	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") Exchange exchange) {
+		return BindingBuilder.bind(queue).to(exchange).with("wx_temp_msg_key.#").noargs();
 	}
+//	@Bean
+//	public Binding wxtempmsgbinding(@Qualifier("wxtempmsgQueue") Queue queue, @Qualifier("topicExchange") FanoutExchange exchange) {
+//		return BindingBuilder.bind(queue).to(exchange);
+//	}
 	@Bean
 	public Binding wxtempmsgbinding1(@Qualifier("wxtempmsgQueue1") Queue queue, @Qualifier("topicExchange") FanoutExchange exchange) {
 		return BindingBuilder.bind(queue).to(exchange);

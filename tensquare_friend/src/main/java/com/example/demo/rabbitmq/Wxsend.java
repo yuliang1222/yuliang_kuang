@@ -74,8 +74,8 @@ public class Wxsend {
 			msg.put("data", tempData);
 			String source = JSONObject.toJSONString(msg);
 //			firstRabbitTemplate.convertAndSend("wx_temp_msg_exchange", "wx_temp_msg_key.test", source);
-//			firstRabbitTemplate.convertAndSend("deadLetterQueue",  source);
-			firstRabbitTemplate.convertAndSend("wx_temp_msg_exchange", "", source);
+			firstRabbitTemplate.convertAndSend("deadLetterQueue",  source);
+//			firstRabbitTemplate.convertAndSend("wx_temp_msg_exchange", "", source);
 			log.info("执行到----:{}",i);
 		}
 	}
