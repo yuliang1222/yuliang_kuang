@@ -142,7 +142,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.60</version>
+            <version>1.2.83</version>
         </dependency>
 
         <!--&lt;!&ndash; https://mvnrepository.com/artifact/ma.glasnost.orika/orika-core &ndash;&gt;-->
